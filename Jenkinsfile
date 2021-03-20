@@ -12,7 +12,10 @@ node{
     }
     stage('PUSH image to Docker Hub')
     { 
+        
         withDockerRegistry([ credentialsId: "docker", url: "https://index.docker.io/v1/" ]) {
-        sh 'docker push ankitaj86/phpmysql_app:latest'
+                                    bat "docker push ankitaj86/phpmysql_app:lates"
+                                     }
+
     }
 }
