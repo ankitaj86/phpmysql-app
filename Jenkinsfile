@@ -12,6 +12,7 @@ node{
     }
     stage('PUSH image to Docker Hub')
     { 
+        sh 'docker login'
         sh 'docker push ankitaj86/phpmysql_app:latest'
     }
 }
