@@ -2,7 +2,7 @@ node{
 
     stage('SCM Checkout')
     {
-        git url: 'https://github.com/ankitaj85/phpmysql-app.git'
+        git url: 'https://github.com/ankitaj86/phpmysql-app.git'
     }
     
     stage('Run Docker Compose File')
