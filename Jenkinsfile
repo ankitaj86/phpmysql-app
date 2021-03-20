@@ -14,7 +14,7 @@ node{
     { 
         
         withDockerRegistry([ credentialsId: "docker", url: "https://index.docker.io/v1/" ]) {
-                                    bat "docker push ankitaj86/phpmysql_app:lates"
+                                    sh "docker push ankitaj86/phpmysql_app:lates"
                                      }
 
     }
